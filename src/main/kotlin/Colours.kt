@@ -3,12 +3,10 @@ class Colours {
     private val colours = listOf("Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Black", "Silver")
 
     fun getAll (): List<String>{
-        //TODO return the colours list
         return colours
     }
 
     fun numberOfColours (): Int{
-        //TODO return the size of the colours list
         return colours.size
     }
 
