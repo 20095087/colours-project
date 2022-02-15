@@ -32,8 +32,7 @@ fun main(args: Array<String>){
 
     println("CAPITALISED list is: ${colours.coloursInAllCapitals()}")
 
-    println("Colours starting with specific letter ___ [ B was chosen ]")
-    print(colours.coloursStartingWithLetter('B'))
+    println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]")
 
     print("Colours with a specific number of chars ___ [ 6 was chosen]")
     println(colours.coloursWithSpecificNumberOfChars(6))
