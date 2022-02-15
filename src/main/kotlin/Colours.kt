@@ -39,9 +39,9 @@ class Colours {
     }
 
     fun isColourInTheList(colour : String) : Boolean{
-        //TODO return true of the colour passed as a parameter is in the list and false otherwise
-        // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
-        return false
+        // made the first character of the string to be capitalized as
+        // the colours begin with a capital letter
+        return colours.contains(colour.replaceFirstChar { it.uppercase() })
     }
 
     //TODO Write THREE additional functions of your choice that will perform some sort of
