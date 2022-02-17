@@ -44,9 +44,7 @@ class Colours {
         return colours.contains(colour.replaceFirstChar { it.uppercase() })
     }
 
-    //TODO Write THREE additional functions of your choice that will perform some sort of
-    // analysis on the colours list.
-
+    // my own 3 functions
     // https://stackoverflow.com/questions/51917892/how-to-make-reversed-for-loop-with-array-index-as-a-start-end-point-in-kotlin
     // I had to research how to iterate through an array in reverse and found this thread on stackoverflow
     fun reverseColours(): List<String>{
@@ -61,6 +59,14 @@ class Colours {
         var list = mutableListOf<Char>()
         for (colour in colours){
             list.add(colour.first())
+        }
+        return list
+    }
+
+    fun printLastLetter(): List<Char>{
+        var list = mutableListOf<Char>()
+        for(colour in colours){
+            list.add(colour.last())
         }
         return list
     }
