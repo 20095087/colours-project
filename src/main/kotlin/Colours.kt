@@ -47,4 +47,13 @@ class Colours {
     //TODO Write THREE additional functions of your choice that will perform some sort of
     // analysis on the colours list.
 
+    // https://stackoverflow.com/questions/51917892/how-to-make-reversed-for-loop-with-array-index-as-a-start-end-point-in-kotlin
+    // I had to research how to iterate through an array in reverse and found this thread on stackoverflow
+    fun reverseColours(): List<String>{
+        var list = mutableListOf<String>()
+        for(i in colours.lastIndex downTo 0) {
+            list.add(colours[i])
+        }
+        return list
+    }
 }
