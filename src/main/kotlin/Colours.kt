@@ -56,4 +56,12 @@ class Colours {
         }
         return list
     }
+
+    fun printFirstLetter(): List<Char>{
+        var list = mutableListOf<Char>()
+        for (colour in colours){
+            list.add(colour.first())
+        }
+        return list
+    }
 }
